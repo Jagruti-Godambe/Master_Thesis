@@ -1,10 +1,11 @@
 import requests
 
 
-class ApiAuthentication('client_id','client_secret'):
-    def __init__(self, client_id, client_secret) -> None:
+class ApiAuthentication:
+    def __init__(self, client_id, client_secret):
         self.client_id = client_id
         self.client_secret = client_secret
+
 
     def test_credentials(self) -> bool:
         response = requests.get(
