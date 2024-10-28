@@ -2,3 +2,4 @@ deutsche_bahn_api
 mpu
 requests
 setuptools
+pandas
