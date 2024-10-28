@@ -7,8 +7,6 @@ on:
   pull_request:
     branches:
       - main
-  schedule:
-    - cron: '0 1 * * *'
   workflow_dispatch:
 
 jobs:
@@ -19,4 +17,5 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name:
+      - name: Run Collection script
+        run: python Collection.py
